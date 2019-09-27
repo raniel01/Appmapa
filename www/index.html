@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+      <!--css-->
+      <link rel="stylesheet" href="components/loader.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+      <!--JavaScript-->
+      <script src="components/loader.js"></script>
+      <script src="components/jquery-3.4.1.min.js"></script>
+      <script src="components/acoes.js"></script>
+      <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+      <script>
+         documento . addEventListener ( " offline " , onOffline, false );
+         
+           function  onOffline () {
+         // Manipula o 
+         console de eventos offline . log ( " conexão perdida " );
+         }
+         
+      </script>
+   </head>
+   <body>
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-2 col-xl-offset-5">
+               <h1 id="titulo">APP - Mapa</h1>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-xs-12">
+               <div class="form-group">
+                  <button class="btn btn-warning btn-block" id="local">Localizar</button>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-xs-12" id="map" style="width: 100%; height: 530px;">
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
